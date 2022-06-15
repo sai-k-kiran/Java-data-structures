@@ -1,0 +1,43 @@
+Map Interface is present in Java.util package, which provides mainly three methods 
+
+1. KeySet() --> used to retrieve the keys of the map
+2. entrySet() --> used to retrieve the key-value pairs of the map
+3. values() --> used to retrieve the values of the map
+
+Since these methods are part of Map Interface, so we can use these methods with all the 
+classes implementing the map interface like TreeMap, HashMap, and LinkedHashMap.
+
+1) keySet() Method:
+keySet() method in Java is used to create a set out of the key elements contained in the 
+hash map. It basically returns a set view of the keys or we can create a new set and store 
+the key elements in them.
+
+    Map<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Geeks");
+        map.put(2, "For");
+        map.put(3, "Geeks");
+
+    System.out.println(map.keySet().toString()); 
+    
+    // returns [1, 2, 3] i.e just keys
+
+2) entrySet() Method:
+entrySet() method in Java is used to create a set out of the same elements contained in 
+the hash map. It basically returns a set view of the hash map or we can create a new set 
+and store the map elements into them.
+
+    Map<Integer, String> map = new HashMap<>();
+
+        map.put(1, "Geeks");
+        map.put(2, "For");
+        map.put(3, "Geeks");
+    
+    for(Map.Entry<Integer, String> entry :map.entrySet()){
+        Integer key = (Integer)entry.getKey();
+        String value = entry.getValue();
+ 
+        System.out.println(key + "=" + value);
+    }
+
+    // returns 1=Geeks 2=For 3=Geeks
