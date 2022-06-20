@@ -1,6 +1,5 @@
 // Find top k (or most frequent) numbers in a stream
 
-import java.io.*;
 import java.util.*;
 
 public class HM8 {
