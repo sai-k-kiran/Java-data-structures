@@ -33,8 +33,8 @@ public class HM9 {
     }
 
     public static void main(String[] args) {
-        int[] arr = {10, 15, -5, 15, -10, 5};
+        int[] arr = {3,2,4};
 
-        subArraySum(arr, 35);
+        subArraySum(arr, 6);
     }
 }

@@ -1,6 +1,5 @@
-
 // Java program to find maximum distance between two same occurrences of a number.
-import java.io.*;
+
 import java.util.*;
 
 public class HM5 {
