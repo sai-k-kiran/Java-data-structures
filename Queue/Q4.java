@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 // Java program for insertion and deletion in Circular Queue
 
-public class CircularQueue {
+class CircularQueue {
     int size, front, rear;
 
     ArrayList<Integer> queue = new ArrayList<>();
@@ -103,8 +103,7 @@ public class CircularQueue {
     
         int x = q.deQueue();
 
-        if(x != -1)
-        {
+        if(x != -1){
             System.out.print("Deleted value = ");
             System.out.println(x);
         }
