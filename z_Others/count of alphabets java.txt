@@ -1,0 +1,27 @@
+If you want to store the frequency of each characters in a string in an array, the
+
+1. Create an array of size 26 coz there are only 26 letters.
+    int[] arr = new int[26];
+
+2.  String s = "abbccceg"
+    for(int i = 0; i < s.length(); i++){
+            arr[s.charAt(i) - 'a']++;
+        }
+    
+The program will store the frequency of characters of the string in their order -->
+Output = 1, 2, 3, 0, 1, 0, 1, 0, 0 ...... 0
+
+See that String s contains 
+'a' = 1, 
+'b' = 2, 
+'c' = 3, 
+'d' = 0,
+'e' = 1,
+'f' = 0,
+'g' = 1 
+and all others alphabets = 0.
+
+And see the Output --> 
+First place(0th index) is for 'a' which is only 1 in String s.
+Second place(1st index) is for 'b' which are 2 in String s.
+Third place(2nd index) is for 'c' which are 3 in String s.
